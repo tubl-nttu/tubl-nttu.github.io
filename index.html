@@ -18,8 +18,81 @@
         }
         
     </style>
+   <style>
+   	.podium-wall {
+  background-color: #eef0ff;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-	
+.podium-wall h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.podium-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.podium-item {
+  width: 250px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.podium-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.podium-item h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+	</style>
+
+	<style>
+    * {
+      box-sizing: border-box;
+    }
+    .carousel {
+      width: 500px;
+      height: 700px;
+      overflow: hidden;
+      position: relative;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33.33% { transform: translateX(-100%); }
+      66.66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
 
 </head>
 <style type="text/css">
@@ -33,9 +106,61 @@
 
 
 </style>
+
+<style>
+.playoff-section {
+  background-color: #f2f2ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.playoff-section h2 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.playoff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動排格子 */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.playoff-item {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.playoff-item img,
+.playoff-item video {
+  width: 150%;
+  border-radius: 15px;
+}
+
+.playoff-item p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+</style>
 <body>
 
+	<div class="carousel">
+    <div class="slides">
+      <img src="example17.jpg" alt="example17.jpg">
+      <img src="example18.jpg" alt="example18.jpg">
+      <img src="example19.jpg" alt="example19.jpg">
+    </div>
+  </div>
+  <div class="logo">
+    <img src="1.jpg" alt="TUBL Logo">
+  </div>
 
+  
 <header>
 	<h1>台東大學籃球聯盟數據紀錄平台</h1>
 
@@ -43,16 +168,419 @@
 
 
 <mark><h1>聯盟創立宗旨:為系籃成員提供更大舞台並讓更多對籃球賽事有興趣的朋友們一同參與</h1></mark>
+<style>
+		.shop-section {
+  background-color: #f5f7ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.shop-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-item {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.shop-item:hover {
+  transform: translateY(-4px);
+}
+
+.shop-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.shop-item h3 {
+  margin: 10px 0 5px 0;
+  font-size: 20px;
+}
+
+.shop-item p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  background-color: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #3730a3;
+}
+</style>
 
 
-<p><a href="https://www.instagram.com/_tubl_/?hl=zh-tw" target="_self"><h2>TUBL官方ig</h2></a></p>
-<a href="#球隊各項數據A">球隊各項數據A</a> <a href="#球隊各項數據B">球隊各項數據B</a> <a href="#A組球隊排名">A組球隊排名</a> <a href="#B組球隊排名">B組球隊排名</a>  
-<a href="#得分王A">得分王A</a> <a href="#籃板王A">籃板王A</a> <a href="#助攻王A">助攻王A</a> <a href="#抄截王A">抄截王A</a> <a href="#火鍋王A">火鍋王A</a> <a href="#得分王B">得分王B</a> <a href="#籃板王B">籃板王B</a> <a href="#助攻王B">助攻王B</a> <a href="#抄截王B">抄截王B</a> <a href="#火鍋王B">火鍋王B</a> 
+<style>
+    body {
+      background-color: #d8ddff;
+      text-align: center;
+      font-family: "Helvetica Neue", sans-serif;
+      margin: 0;
+    }
+
+    .logo {
+      margin-top: 20px;
+    }
+
+    .logo img {
+      width: 300px;         /* 調整圖片寬度 */
+      height: 300px;        /* 設定高度相等製造圓形 */
+      object-fit: cover;    /* 確保圖片填滿容器 */
+      border-radius: 50%;   /* 重點：讓圖片變成圓形 */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 可選的陰影效果 */
+    }
+
+    .title-section {
+      padding: 10px;
+    }
+
+    .title-section h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 0 0 0;
+    }
+
+    .title-section h2 {
+      font-size: 20px;
+      font-style: italic;
+      margin: 5px 0;
+    }
+
+    .title-section p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+ </style>
+ <style>
+ 	.profile-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-card {
+  background: white;
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eee;
+}
+
+.profile-name-title h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.profile-name-title h3 {
+  font-size: 18px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.profile-content h2 {
+  margin-top: 24px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.profile-content ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.profile-content li {
+  line-height: 1.8;
+}
+</style>
+
+ <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 10px 0;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+      font-size: 14px;
+    }
+
+    .navbar a:hover {
+      background-color: #e0e0e0;
+    }
+
+    .navbar a h2 {
+      display: inline;
+      font-size: 16px;
+      margin: 0;
+    }
+ </style>
+  <style>
+    
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .video-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .video-card iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="https://www.instagram.com/_tubl_/?hl=zh-tw" target="_self"><h2>TUBL官方ig</h2></a>
+    <a href="#球隊各項數據A">球隊各項數據A</a>
+    <a href="#球隊各項數據B">球隊各項數據B</a>
+    <a href="#A組球隊排名">A組球隊排名</a>
+    <a href="#B組球隊排名">B組球隊排名</a>
+    <a href="#得分王A">得分王A</a>
+    <a href="#籃板王A">籃板王A</a>
+    <a href="#助攻王A">助攻王A</a>
+    <a href="#抄截王A">抄截王A</a>
+    <a href="#火鍋王A">火鍋王A</a>
+    <a href="#得分王B">得分王B</a>
+    <a href="#籃板王B">籃板王B</a>
+    <a href="#助攻王B">助攻王B</a>
+    <a href="#抄截王B">抄截王B</a>
+    <a href="#火鍋王B">火鍋王B</a>
+  </div>
 
 
 
 </header>
-	
+
+
+	<h1>TUBL 影片專區</h1>
+
+  <div class="video-grid">
+    <!-- 宣傳片 -->
+    <div class="video-card">
+      <h3>2025 TUBL 宣傳片</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xF3_yok6828?si=xfKPoqlvjGstTDSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <!-- 對戰紀錄影片範例 -->
+    <div class="video-card">
+      <h3>冠軍戰(上半場)</h3>
+      <iframe src="https://www.youtube.com/embed/fdLuuBcfq7o" allowfullscreen></iframe>
+
+
+    </div>
+
+
+    <div class="video-card">
+      <h3>季軍戰</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/A-HSsM0fm3E?si=9o9J9sdJjAisucMK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  <section class="profile-section">
+  <div class="profile-card">
+    <div class="profile-header">
+      <img src="18.jpg" alt="頭像">
+       <img src="19.jpg" alt="頭像">
+        <img src="20.jpg" alt="頭像">
+      <div class="profile-name-title">
+        <h1>曾立行</h1>
+        <p>電話：09-65622967</p>
+        <p>Email：sammayjerry@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      
+      <h2>技能 Skills</h2>
+      <ul>
+        <li>乘風飛躍</li>
+        <li>順風式</li>
+        <li>穿雲衝刺</li>
+        <li>暴風旋刃</li>
+      </ul>
+
+      <h2>經歷 Experience</h2>
+      <ul>
+        <li>25賽季台東大學籃球聯盟 8強</li>
+        <li>24 大資盃全國12強</li>
+        <li>25 系際盃 亞軍</li>
+        <li>躺NSSSE最佳論文獎哈哈哈</li>
+        <li>瓦羅蘭 V25第三章最高段位-銀牌2 世一嚼</li>
+        <li>三創競賽 佳作</li>
+        <li>入圍中原100K創業競賽</li>
+      </ul>
+
+    
+    </div>
+  </div>
+</section>
+
+	<section class="podium-wall">
+  <h2>🏆 本季榮譽照片牆</h2>
+  <div class="podium-grid">
+    <div class="podium-item">
+      <img src="10.jpg" alt="冠軍球隊">
+      <h3>冠軍:教育</h3>
+    </div>
+    <div class="podium-item">
+      <img src="11.jpg" alt="亞軍球隊">
+      <h3>亞軍:DPECE</h3>
+    </div>
+    <div class="podium-item">
+      <img src="12.jpg" alt="季軍球隊">
+      <h3>季軍:公文</h3>
+    </div>
+    <div class="podium-item">
+      <img src="13.jpg" alt="殿軍球隊">
+      <h3>殿軍:體育先瘋</h3>
+    </div>
+  </div>
+  	<section class="shop-section">
+  <h2>🛍️ 聯盟周邊小賣場</h2>
+  <div class="shop-grid">
+
+    <!-- 商品 1：冠軍T -->
+    <div class="shop-item">
+      <img src="14.jpg" alt="元年冠軍T">
+      <h3>元年冠軍T</h3>
+      <p>價格：NT$520</p>
+      <a href="https://forms.gle/KuMYQwEB5SY5mzKd6" class="buy-button">立即購買</a>
+    </div>
+
+    <!-- 商品 2：TUBL 鞋袋 -->
+    <div class="shop-item">
+      <img src="15.jpg" alt="TUBL X TGF 鞋袋">
+      <h3>TUBL × TGF 鞋袋</h3>
+      <p>價格：NT$515</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfONRpi5xzPY2DY5rqAO779bzJPDM0vok8ZIrcvoDsVRqohuQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAaevYgZU_3k4Da7FBQnaTJ8HfEP6NpAi_C9FyBaozgqW-_0ZuPsr-GYSmUlglQ_aem_ugwBapdcy-VM6mFRjBGIEQ&pli=1" class="buy-button">立即購買</a>
+    </div>
+
+    <!-- 你可以繼續新增更多商品卡片 -->
+    <!-- <div class="shop-item"> ... </div> -->
+
+  </div>
+  <section class="playoff-section">
+  <h2>🏀 季後賽對戰結果與影片🏀</h2>
+  <div class="playoff-grid">
+    <!-- 每一個格子都可以放圖片或影片 -->
+    <div class="playoff-item">
+      <img src="2.jpg" alt="比賽結果1">
+      <p>教育vs綠資管雲豹</p>
+    </div>
+    
+    <div class="playoff-item">
+      <img src="3.jpg" alt="比賽結果2">
+      <p>公文vs應數活寶</p>
+    </div>
+    
+    <div class="playoff-item">
+      <img src="4.jpg" alt="比賽結果2">
+      <p>體育先瘋vsDPECE</p>
+    </div>
+    <div class="playoff-item">
+      <img src="5.jpg" alt="比賽結果2">
+      <p>教育vs公文</p>
+    </div>
+    <div class="playoff-item">
+      <img src="6.jpg" alt="比賽結果2">
+      <p>四強賽</p>
+    </div>
+    <div class="playoff-item">
+      <img src="7.jpg" alt="比賽結果2">
+      <p>四強賽</p>
+    </div>
+    <div class="playoff-item">
+      <img src="16.jpg" alt="比賽結果2">
+      <p>資工進入季後賽</p>
+    </div>
+    <div class="playoff-item">
+      <img src="17.jpg" alt="比賽結果2">
+      <p>綠資管雲豹進入季後賽</p>
+    </div>
+</section>
 
 	<table border="3px" align="center"  width="1700px" height="800px" cellpadding="40px;" bgcolor="#afbfff" id="球隊各項數據A">
 
@@ -409,6 +937,14 @@
 				</tr>
 			</tbody>
 	</table>
+	
+   
+  
+  
+</div>
+    <!-- 可繼續增加更多格子 -->
+  </div>
+</section>
 <hr style="height:20px;background-color:#e1bee7">
 
 	<table border="1" align="center"  width="1000px" height="500px" cellpadding="40px;" bgcolor="#afbfff"id="A組球隊排名">
@@ -800,47 +1336,13 @@
 			</tbody>
 		</caption>
 	</table>
-	<hr style="height:20px;background-color:#e1bee7">
-<p><a href="https://www.instagram.com/_tubl_/?hl=zh-tw" target="_self">tubl官方ig</a></p>
-<h2>我們的位置</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.766109340623!2d121.06409168885499!3d22.736933200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346fb793cb399c9f%3A0x72e87bae6ffa1c12!2z5ZyL56uL6Ie65p2x5aSn5a24IOefpeacrOagoeWNgA!5e0!3m2!1szh-TW!2stw!4v1741598741208!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<h2>NBA</h2>
-<iframe width="640" height="360" src="https://www.youtube.com/embed/R-ZbLo2ZhWk" title="Los Angeles Clippers vs Sacramento Kings Full Game Highlights - March 9, 2025 | NBA Regular Season" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h2>NBA目前戰績</h2>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fnba%2Fposts%2Fpfbid0azSWDHwKmcQka83Wx12sNU5HHUhCwgRCNvJMDiCrrggzjmhg64ihNCGqDdyBpAMMl&show_text=true&width=500" width="500" height="424" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-<h2>game</h2>
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/TPWdkpxuvRQ" title="綠資管雲豹VS應科量子" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
--
-
-<img src="example.jpg"
-     srcset="../static/images/128.jpg 350w,
-             ../static/images/256.jpg 750w,
-             ../static/images/512.jpg 900w,
-             ../static/images/1024.jpg 1000w"
-
-     sizes="(max-width: 320px) 100px,
-            (max-width: 450px) 200px,
-            (max-width: 700px) 300px,
-            (max-width: 800px) 400px,
-            (max-width: 900px) 500px,
-            1024px">
-<img src="example2.jpg"
-     srcset="../static/images/128.jpg 350w,
-             ../static/images/256.jpg 750w,
-             ../static/images/512.jpg 900w,
-             ../static/images/1024.jpg 1000w"
-
-     sizes="(max-width: 320px) 100px,
-            (max-width: 450px) 200px,
-            (max-width: 700px) 300px,
-            (max-width: 800px) 400px,
-            (max-width: 900px) 500px,
-            1024px">
-<video controls poster="video.GIF">
-<img src="example3.jpg" alt="Description of image">
-
-<h2>game</h2>
+	
 
 
 </body>
+<footer style="background-color: #afbfff; color: #000000; text-align: center; padding: 30px 20px; font-size: 14px;">
+  <p>&copy; 2025 TUBL. All rights reserved.</p>
+  <p>地址：台東大學體育館, 台東市, 台灣</p>
+  <p>聯絡電話：09-65622967</p>
+</footer>
 </html>
